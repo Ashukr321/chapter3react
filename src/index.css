@@ -80,3 +80,12 @@ main h2{
   text-transform:uppercase;
 } 
 
+@media screen and (max-width:768px) {
+  #user{
+    width: 90%;
+  }
+  #user  h2{
+    font-size:1rem;
+    
+  } 
+}
