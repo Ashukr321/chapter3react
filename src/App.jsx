@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import react_logo from '/src/assets/react-core-concepts.png'
+import User from './User';
 
 const reactDescription = ['Fundamental ','Crucial','Core'];
 
@@ -18,10 +19,11 @@ function Header(){
           {description} React concepts you will need for almost any app you are
         going to build!
       </p>
-
     </header>
   )
 }
+
+
 
 function App() {
 
@@ -31,9 +33,11 @@ function App() {
   return (
     <>
      <Header/>
-     <main>
+     <main >
        <h2>Time to get started!</h2>
+      
      </main>
+     <User/>
     </>
   )
 }
