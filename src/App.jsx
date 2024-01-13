@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import react_logo from "/src/assets/react-core-concepts.png";
+import CoreConcept from "./CoreConcept";
 
 const reactDescription = ["Fundamental ", "Crucial", "Core"];
 
@@ -13,14 +14,15 @@ function Header() {
   return (
     <header>
       <img src={react_logo} alt="stylized atom" />
-      <h1>React Essentials</h1>
+      <h1>Mern Essentials</h1>
       <p>
-        {description} React concepts you will need for almost any app you are
+        {description} mern concepts you will need for almost any app you are
         going to build!
       </p>
     </header>
   );
 }
+
 
 function App() {
   useEffect(() => {
@@ -30,7 +32,12 @@ function App() {
     <>
       <Header />
       <main>
-        <h2>Time to get started!</h2>
+        <section id="core-concepts">
+          <h2>mern stack </h2>
+          <div id="info_container">
+            <CoreConcept/>
+          </div>
+        </section>
       </main>
     </>
   );
