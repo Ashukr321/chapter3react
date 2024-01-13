@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import react_logo from "/src/assets/react-core-concepts.png";
 import CoreConcept from "./CoreConcept";
+import Login from "./Login";
 
 const reactDescription = ["Fundamental ", "Crucial", "Core"];
 
@@ -23,7 +24,6 @@ function Header() {
   );
 }
 
-
 function App() {
   useEffect(() => {
     document.title = "techyashu";
@@ -31,14 +31,13 @@ function App() {
   return (
     <>
       <Header />
-      <main>
-        <section id="core-concepts">
-          <h2>mern stack </h2>
-          <div id="info_container">
-            <CoreConcept/>
-          </div>
-        </section>
-      </main>
+      <section id="core-concepts">
+        <h2>mern stack </h2>
+        <div id="info_container">
+          <CoreConcept />
+        </div>
+      </section>
+      <Login/>
     </>
   );
 }

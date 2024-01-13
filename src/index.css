@@ -5,7 +5,7 @@
   --webkit-font-smoothing:antialiased;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
 
 html {
   font-family: 'Roboto',sans-serif;
@@ -14,7 +14,7 @@ html {
   background: radial-gradient(#280a48, #20043d);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  min-height: 80rem;
+  min-height: auto;
 }
 
 header{
@@ -45,9 +45,10 @@ header p{
 }
 
 
-main h2{
+ h2{
   text-align:center;
-  color:#a18aba;
+  margin-bottom: 1rem;
+  letter-spacing:.1em;
   font-family: "Roboto Condensed", sans-serif;
   background: linear-gradient(40deg,#864AF9,#FF9BD2,#FF9843);
   -webkit-background-clip: text;
@@ -92,11 +93,14 @@ main h2{
 } */
 #core-concepts{
   width:100%;
-  max-height: 15rem;
+  height:auto;
+  overflow: hidden;
+  padding:2rem;
 }
 #core-concepts h2{
   font-size:2rem;
-  text-transform:capitalize;
+  text-align:center;
+  text-transform:uppercase;
 }
 
 #info_container{
@@ -127,4 +131,90 @@ main h2{
   height:auto;
   max-width: 200px;
   text-align:center;
+}
+
+
+#login{
+  padding:3rem;
+  margin: 2rem 0;
+  height:auto;
+  width:90%;
+  margin: auto;
+}
+@media screen and (max-width:678px) {
+  #login{
+    width:95%;
+  }
+}
+.container{
+  margin: auto;
+  width:100%;
+  padding: 0.5rem;
+  height:20rem;
+  display:flex;
+}
+#form_head{
+  font-size: 1.8rem;
+  text-transform:capitalize;
+  background: linear-gradient(10deg,#D63484,#864AF9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+form{
+  width:96%;
+  margin:auto;
+  border-radius:6px;
+  background-color:rgb(211, 223, 255);
+  height:96%;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  -ms-border-radius:6px;
+  -o-border-radius:6px;
+  padding:2% 6%;
+
+}
+
+form label{
+  display: block;
+  color:black;
+  text-transform:capitalize;
+  font-weight:bold;
+  margin-bottom: 1%;
+}
+
+form input{
+  width:100%;
+  font-size:1.2rem;
+  padding:6px 4px;
+  border-radius:6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  -ms-border-radius:6px;
+  -o-border-radius:6px;
+  margin-bottom: .5rem;
+}
+.btn{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  margin-top: .7rem;
+}
+form button{
+  padding:6px 32px;
+  font-size:1.2rem;
+  cursor:pointer;
+  background-color:#240743;
+  color:white;
+  border:none;
+  border-radius:6px;
+
+  outline: none;
+}
+
+form button:hover{
+  box-shadow:.5px 8px 10px 2px #fff;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  -ms-border-radius:6px;
+  -o-border-radius:6px;
 }
