@@ -1,0 +1,52 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  --webkit-font-smoothing:antialiased;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+hmlt {
+  font-family: 'Roboto',sans-serif;
+  line-height: 1.5;
+  color:#ebe7ef;
+  background: radial-gradient(#280a48, #20043d);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  min-height: 80rem;
+}
+
+header{
+  text-align:center;
+  margin: 3rem 0;
+}
+
+header img{
+  width:5rem;
+  height:10rem;
+  object-fit: cover;
+}
+
+header h1{
+  margin:0;
+  font-size:1.25rem;
+  color:#8964b0 ;
+  font-family: "Roboto", sans-serif;
+}
+
+header p{
+  padding:0 1rem;
+}
+main{
+ width:90%;
+ max-width: 50rem;
+  margin:  auto;
+}
+
+main h2{
+  text-align:center;
+  color:#a18aba;
+  font-family: "Roboto Condensed", sans-serif;
+
+}
