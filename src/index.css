@@ -218,3 +218,42 @@ form button:hover{
   -ms-border-radius:6px;
   -o-border-radius:6px;
 }
+
+/*  menu  */
+
+menu{
+  padding:2rem 9rem;
+  min-height: 300px;
+}
+
+
+menu button {
+  font-size:1.5rem;
+  margin-right: 1rem;
+  text-transform:capitalize;
+  cursor:pointer;
+  border:none;
+  margin-top: 2rem;
+  background:  linear-gradient(40deg,#FF9843,#D63484,#FF004D);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+
+menu div p {
+  margin-top: 1rem;
+  width:100%;
+  min-width: 300px;
+  padding:10px;
+}
+@media  screen and (max-width:678px) {
+  menu{
+    padding:1rem 5rem;
+  }
+  menu button {
+    font-size:1rem;
+    margin-right: .5rem;
+    
+  }
+  
+}
+

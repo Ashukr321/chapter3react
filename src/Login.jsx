@@ -1,22 +1,33 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./index.css";
+
 const Login = () => {
-  const handleSubmit = () => {};
+  
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Use preventDefault instead of defaultPropagation
+    alert(`${email} and ${password}`);
+    setEmail('');
+    setPassword('');
+  };
+
   return (
     <section id="login">
       <div className="container">
-        <form action="" onSubmit={handleSubmit}>
-          <h2 id="form_head" >login</h2>
+        <form onSubmit={handleSubmit}>
+          <h2 id="form_head">Login</h2>
           <div>
-            <label htmlFor="email">email</label>
-            <input type="email" id="password" />
+            <label htmlFor="email">Email</label>
+            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
           <div>
-            <label htmlFor="password">password</label>
-            <input type="text" id="password" />
+            <label htmlFor="password">Password</label>
+            <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
           </div>
           <div className="btn">
-          <button type="submit">submit</button>
+            <button type="submit">Submit</button>
           </div>
         </form>
       </div>
